@@ -1,0 +1,11 @@
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel_text {
+    text-align: left;
+    background: linear-gradient(270deg, rgb(33, 33, 33) 70%, rgb(210, 0, 0) 151%);
+    font-size: 28px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

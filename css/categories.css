@@ -1,0 +1,45 @@
+.choose_title {
+    font-size: 36px;
+    color: #780000;
+    background: linear-gradient(270deg, rgb(33, 33, 33) 21%, rgb(210, 0, 0) 122%);
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose_cars {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    font-size: 26px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cars-item {
+    text-align: center;
+}
+
+.cars-item img {
+    min-width: 160px;
+    max-width: 160px;
+    transform: translateY(-40%);
+}
+
+.cars-item a {
+    color: #e3e3e3;;
+    transition: 0.45s;
+}
+
+.cars-item a:hover {
+    transition: 0.25s;
+    color: #868686;
+}
+
+.categories {
+    padding-bottom: 60px;
+    border-bottom: 1px #3e3e3e solid;
+}
