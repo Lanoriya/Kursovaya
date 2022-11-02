@@ -1,0 +1,40 @@
+.slider-block {
+    padding: 0 12px 0 12px;
+}
+
+.slider-wrapper img {
+    height: 430px;
+}
+
+.sliders {
+    margin-top: 50px;
+}
+
+.slider-next {
+    position: absolute;
+    top: -80px;
+    right: calc(100px + 7.5%);
+    padding-top: 0;
+}
+
+.slick-slide {
+    min-width: 370px;
+}
+
+.slider-prev {
+    position: absolute;
+    top: -80px;
+    right: calc(150px + 7.5%);
+    padding-top: 0;
+}
+
+.sliders .btn img {
+    margin-top: 2px;
+    width: 16px;
+}
+
+.slider-btn {
+    border: 1px solid rgb(61, 61, 61);
+    width: 45px;
+    height: 45px;
+}
