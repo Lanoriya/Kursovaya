@@ -28,6 +28,11 @@ body {
 .header {
     padding: 25px 0;
     margin-bottom: 40px;
+    height: 780px;
+    background-image: url(../img/header_auto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 .container {
@@ -37,6 +42,21 @@ body {
 
 .header .container {
    display: flex;
+   position: relative;
    justify-content: space-between;
    margin-bottom: 20px;
+   z-index: 2;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.8) 100%); */
+    /* background: linear-gradient(270deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.9) 100%); */
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.7) 70%);
+    height: 780px;
+    width: 100%;
+    z-index: 1;
 }

@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/slick_styles.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/categories.css">
     <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/popup.css">
     <title>Lanoriya</title>
 </head>
 <body class="root">
     <div class="page">
-
         <header class="header">
             <div class="container">
-                <div class="logo">
-                    <a href="#"><img src="./img/logo.svg" alt="logo"></a>
+                <div class="logo_menu">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo.svg" alt="logo"></a>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="#">Автомобили</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Условия</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Как добраться</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <ul>
-                        <li class="menu-item">
-                            <a href="#">Автомобили</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Условия</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Контакты</a>
-                        </li>
-                        <li class="last-item menu-item">
-                            <a href="#">Личный кабинет</a>
-                        </li>
-                    </ul>
-                </nav>
                 <div class="menu_info">
                     <ul>
                         <li class="menu_info-item">
@@ -53,12 +53,61 @@
                     <span class="phone">
                         <a href="tel: +79504925996">+7 (950) 492-59-96</a>
                     </span>
+                    <span class="office pop_up_button">
+                        <a href="#" id="open_pop_up">Личный кабинет</a>
+                    </span>
+                    <div class="pop_up" id="pop_up">
+                        <div class="pop_up_container">
+                          <form class="pop_up_body" id="pop_up_body">
+                            <div class="trend__text">
+                              <h2 class="trend__title">Ваш фидбек</h2>
+                            </div>
+                            <div class="pop_up_select">
+                              <span class="pop_up_selectText">
+                                Как часто вы заходите на сайт?
+                              </span>
+                              <div class="choice">
+                                <select class="pop_up_list" id="pop_list">
+                                  <option value="">Почти каждый день</option>
+                                  <option value="one">Раз в несколько дней</option>
+                                  <option value="two">Раз в несколько недель</option>
+                                  <option value="one">Несколько раз в год</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="email_spam">
+                              <span class="pop_up_selectText">
+                                Вы подписаны на e-mail рассылку?
+                              </span>
+                              <div class="email_spam_radio">
+                                <label class="checkbox-group">
+                                  <input type="radio" class="radio" name="choicer" required>
+                                  <span class="checkbox-text">Да</span>
+                                </label>
+                                <label class="checkbox-group">
+                                  <input type="radio" class="radio" name="choicer" required>
+                                  <span class="checkbox-text">Нет</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="content">
+                              <span class="pop_up_selectText">
+                                Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+                              </span>
+                              <div class="content__textarea">
+                                <textarea type="text" placeholder="Может, больше рецептов?"></textarea>
+                              </div>
+                            </div>
+                            <button class="button_sub"><span class="visually-hidden">Кнопка отправки поп</span>Отправить</button>
+                            <div class="pop_up_close" id="pop_up_close">&#10006</div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="auto">
                 <div class="banner">
-                    <h1 class="banner_title">Аренда премиальных автомобилей</h1>
-                    <h2 class="banner_text"><a href="#">Каталог автомобилей</a></h2>
+                    <h1 class="banner_title">Аренда премиальных автомобилей в <span class="banner_title-red">Тюмени</span></h1>
                 </div>
             </div>
         </header>
@@ -71,52 +120,16 @@
                         <h3 class="choose_title">Категории автомобилей</h3>
                         <div class="choose_cars">
                             <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_1.png" alt="">
-                                    <span class="cars-text">Бизнес</span>
-                                </a>
+                                <a href="#" id="cars-text">Бизнес</a>
                             </div>
                             <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_2.png" alt="">
-                                    <span class="cars-text">Кабриолет</span>
-                                </a>
+                                <a href="#" id="cars-text">Спорткары</a>
                             </div>
                             <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_3.png" alt="">
-                                    <span class="cars-text">Купе</span>
-                                </a>
+                                <a href="#" id="cars-text">Премиум</a>
                             </div>
                             <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_4.png" alt="">
-                                    <span class="cars-text">Спорткары</span>
-                                </a>
-                            </div>
-                            <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_5.png" alt="">
-                                    <span class="cars-text">Премиум</span>
-                                </a>
-                            </div>
-                            <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_6.png" alt="">
-                                    <span class="cars-text">Внедорожники</span>
-                                </a>
-                            </div>
-                            <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_7.png" alt="">
-                                    <span class="cars-text">Минивены</span>
-                                </a>
-                            </div>
-                            <div class="cars-item">
-                                <a href="#">
-                                    <img src="./img/header_cars/auto_8.png" alt="">
-                                    <span class="cars-text">Комфорт</span>
-                                </a>
+                                <a href="#" id="cars-text">Комфорт</a>
                             </div>
                         </div>
                     </div>
@@ -129,36 +142,77 @@
                         <div class="container">
                             <h3 class="choose_title carousel_text">Бизнес</h3>
                         </div>
-                        <div class="carousel-item">
-        
+                        <div class="carousel-flex">
+                            <div class="carousel-item_business">
+                                <a href="#"><img src="./img/katalog/business/business1.jpg" alt="">
+                                    <div class="business_descript_flex">
+                                        <span class="business_descript_down">2022</span>
+                                        <span class="business_descript_down">Полный</span>
+                                        <span class="business_descript_down">249 л.с</span>
+                                    </div>
+                                </a>
+                                <span class="business_descript">BMW X7 30d I (G07)</span>
+                                <span class="business_descript_sum">8000 ₽/сут.</span>
+                            </div>
+                            <div class="carousel-item_business">
+                                <a href="#"><img src="./img/katalog/business/business2.jpg" alt="">
+                                    <div class="business_descript_flex">
+                                        <span class="business_descript_down">2022</span>
+                                        <span class="business_descript_down">Задний</span>
+                                        <span class="business_descript_down">184 л.с</span>
+                                    </div>
+                                </a>
+                                <span class="business_descript">BMW 4 420i G22</span>
+                                <span class="business_descript_sum">4200 ₽/сут.</span>
+                            </div>
+                            <div class="carousel-item_business">
+                                <a href="#"><img src="./img/katalog/business/business3.jpg" alt="">
+                                    <div class="business_descript_flex">
+                                        <span class="business_descript_down">2021</span>
+                                        <span class="business_descript_down">Полный</span>
+                                        <span class="business_descript_down">249 л.с</span>
+                                    </div>
+                                </a>
+                                <span class="business_descript">BMW X5 30d IV (G05)</span>
+                                <span class="business_descript_sum">7500 ₽/сут.</span>
+                            </div>
+                            <div class="carousel-item_business">
+                                <a href="#"><img src="./img/katalog/business/business4.jpg" alt="">
+                                    <div class="business_descript_flex">
+                                        <span class="business_descript_down">2022</span>
+                                        <span class="business_descript_down">Полный</span>
+                                        <span class="business_descript_down">530 л.с</span>
+                                    </div>
+                                </a>
+                                <span class="business_descript">BMW 8 Gran Coupe M850i</span>
+                                <span class="business_descript_sum">6500 ₽/сут.</span>
+                            </div>
+                            <div class="carousel-item_business">
+                                <a href="#"><img src="./img/katalog/business/business5.jpg" alt="">
+                                    <div class="business_descript_flex">
+                                        <span class="business_descript_down">2022</span>
+                                        <span class="business_descript_down">Полный</span>
+                                        <span class="business_descript_down">249 л.с</span>
+                                    </div>
+                                </a>
+                                <span class="business_descript">BMW 5 530d xDrive VII</span>
+                                <span class="business_descript_sum">4500 ₽/сут.</span>
+                            </div>
+                            <div class="carousel-item_business">
+                                <a href="#"><img src="./img/katalog/business/business6.jpg" alt="">
+                                    <div class="business_descript_flex">
+                                        <span class="business_descript_down">2021</span>
+                                        <span class="business_descript_down">Полный</span>
+                                        <span class="business_descript_down">190 л.с</span>
+                                    </div>
+                                </a>
+                                <span class="business_descript">BMW 3 320d xDrive VII</span>
+                                <span class="business_descript_sum">5500 ₽/сут.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            <div class="container_sliders">
-                <div class="sliders">
-                    <div class="slider-block">
-                        <div class="slider-wrapper"><a href="#"><img src="img/katalog/buisnes/buisnes1.jpg" alt=""></a></div>
-                    </div>
-                    <div class="slider-block">
-                        <div class="slider-wrapper"><a href="#"><img src="img/katalog/buisnes/buisnes2.jpg" alt=""></a></div>
-                    </div>
-                    <div class="slider-block">
-                        <div class="slider-wrapper"><a href="#"><img src="img/katalog/buisnes/buisnes3.jpg" alt=""></a></div>
-                    </div>
-                    <div class="slider-block">
-                        <div class="slider-wrapper"><a href="#"><img src="img/katalog/buisnes/buisnes4.jpg" alt=""></a></div>
-                    </div>
-                    <div class="slider-block">
-                        <div class="slider-wrapper"><a href="#"><img src="img/katalog/buisnes/buisnes5.jpg" alt=""></a></div>
-                    </div>
-                    <div class="slider-block">
-                        <div class="slider-wrapper"><a href="#"><img src="img/katalog/buisnes/buisnes6.jpg" alt=""></a></div>
-                    </div>
-                </div>
-            </div>
-
         </main>
 
         <footer class="footer">
@@ -167,8 +221,6 @@
 
     </div>
 
-    <script src="./js/jquery-3.6.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
