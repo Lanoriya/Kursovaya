@@ -81,7 +81,8 @@
     width: 720px;
     top: 140px;
     left: 180px;
-    z-index: 1;
+    pointer-events: none;
+    z-index: 2;
 }
 
 .banner_title-red {
